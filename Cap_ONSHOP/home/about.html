@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>ABOUT/ETEREO</title>
+
+    <link rel="icon" type="image/x-icon" href="image/favicon/apple-icon-120x120.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="css/styles.css" rel="stylesheet" />
+    
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <img src="image/etereo_logo.png" width="100px" height="100px" alt>
+                <a class="navbar-brand" href="index.php">ETÉREO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">Todos los Productos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#!">Mas Populares</a></li>
+                                <li><a class="dropdown-item" href="#!">Productos Nuevos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="login.php">Iniciar Sesion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Sobre Nosotros</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Carrito
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+
+        <div id="div-cookies" style="display: none;">
+            Este sitio web necesita utilizar cookies, si continua navegando acepta su uso, puede conocer nuestro aviso de privacidad en
+            <a hreflang="es" href="privacidad.html">Política de Privacidad</a>.
+            <button type="button" class="btn btn-sm btn-primary" onclick="acceptCookies()">
+                Acepto el uso de cookies
+            </button>
+        </div>
+        <style>
+        #div-cookies {
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0px -5px 15px gray;
+            padding: 7px;
+            text-align: center;
+            z-index: 99;
+        }
+        </style>
+        <script>
+        function checkAcceptCookies() {
+            if (localStorage.acceptCookies == 'true') {
+            } else {
+                $('#div-cookies').show();
+            }
+        }
+        function acceptCookies() {
+            localStorage.acceptCookies = 'true';
+            $('#div-cookies').hide();
+        }
+        $(document).ready(function() {
+            checkAcceptCookies();
+        });
+        </script>
+        
+
+
+
+
+
+
+
+
+        <div class="about_logo">
+
+            <img src="image/etereo_logo.png" height="300px" width="300px">
+        </div>
+        <aside class="about">
+            <h3>¿Quienes somos?</h3>
+            <p>Somos una empresa de origen mexicano, formada por apasionados de la moda y la alta costura, que pretende
+                siempre estar a la
+                vanguardia, con productos diseñados por nosotros y de igual forma con productos importados por nuestros principales
+                socios.</p>
+
+            <h3>Misión</h3>
+            <p>
+                Nuestra misión es poder satisfacer la demanda de productos textiles con diseños inovadores, de alta calidad a un precio competente.
+            </p>
+            <h3>Visión</h3>
+            <p>
+                Queremos llegar a convertirnos en un icono de la moda, comercializar nuestros diseños por todo el mundo,
+                logrando aprovechar al máximo los medios digitales.
+            </p>
+
+        </aside>
+    </section>
+
+    
+
+</body>
+
+</html>
